@@ -4195,6 +4195,12 @@
 		(uuid "50033460-2c3b-4062-a697-6c3ae3dcfaed")
 	)
 	(junction
+		(at 137.16 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "53e3d6e5-5168-4cd7-b0bc-4afc545a4e07")
+	)
+	(junction
 		(at 54.61 162.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4508,6 +4514,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 72.39) (xy 104.14 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28f9be29-3d7c-4182-ae94-c28ec568916c")
+	)
+	(wire
+		(pts
 			(xy 104.14 58.42) (xy 109.22 58.42)
 		)
 		(stroke
@@ -4688,6 +4704,16 @@
 	)
 	(wire
 		(pts
+			(xy 137.16 119.38) (xy 140.97 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53657c27-2cdb-4d1d-bd71-f4462ecbef96")
+	)
+	(wire
+		(pts
 			(xy 171.45 43.18) (xy 171.45 74.93)
 		)
 		(stroke
@@ -4768,7 +4794,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 58.42) (xy 104.14 91.44)
+			(xy 104.14 58.42) (xy 104.14 62.23)
 		)
 		(stroke
 			(width 0)
@@ -4785,6 +4811,16 @@
 			(type default)
 		)
 		(uuid "87b5ccb7-660b-429a-accc-387130cf4d95")
+	)
+	(wire
+		(pts
+			(xy 137.16 128.27) (xy 137.16 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8baca1ad-d8e0-46df-af75-8dde23466442")
 	)
 	(wire
 		(pts
@@ -5088,7 +5124,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 119.38) (xy 140.97 119.38)
+			(xy 102.87 119.38) (xy 137.16 119.38)
 		)
 		(stroke
 			(width 0)
@@ -6079,6 +6115,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 137.16 135.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "07eab7cf-a70e-4679-9227-f82414b98529")
+		(property "Reference" "#PWR015"
+			(at 137.16 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 137.16 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 137.16 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "289ef84b-3efe-4f8e-aa9e-1b9d41d1d1bd")
+		)
+		(instances
+			(project "vbus-adapter"
+				(path "/c5b76d16-c954-491e-a7b2-87b879d4d4be"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:SMAJ12CA")
 		(at 55.88 63.5 270)
 		(unit 1)
@@ -6372,7 +6474,7 @@
 				)
 			)
 		)
-		(property "Value" "ISO7721D"
+		(property "Value" "ISO7721FDR"
 			(at 92.71 111.76 0)
 			(effects
 				(font
@@ -7661,6 +7763,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:Jumper_2_Bridged")
+		(at 104.14 67.31 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "57134b6e-f61b-4fcf-97f0-7ade29e74dfb")
+		(property "Reference" "JP2"
+			(at 106.68 66.0399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "VBUS R/W"
+			(at 106.68 68.5799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 104.14 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jumper, 2-pole, closed/bridged"
+			(at 104.14 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "64cb3d9d-a068-4053-8ca0-5a5e68dcddcb")
+		)
+		(pin "1"
+			(uuid "ae3b622b-946a-4467-a280-52175766904b")
+		)
+		(instances
+			(project "vbus-adapter"
+				(path "/c5b76d16-c954-491e-a7b2-87b879d4d4be"
+					(reference "JP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:BAT54S")
 		(at 101.6 21.59 270)
 		(unit 1)
@@ -8720,6 +8892,76 @@
 			(project "vbus-adapter"
 				(path "/c5b76d16-c954-491e-a7b2-87b879d4d4be"
 					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 137.16 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cd4c8683-fa58-487f-8fe8-95acb5c88560")
+		(property "Reference" "R4"
+			(at 139.7 130.8099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "6k8"
+			(at 139.7 133.3499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 135.382 132.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 137.16 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "670f65e8-153b-4761-8408-7f5fbf8a2f00")
+		)
+		(pin "1"
+			(uuid "fc58b12e-b0d6-458b-a5cc-d9616addeb15")
+		)
+		(instances
+			(project "vbus-adapter"
+				(path "/c5b76d16-c954-491e-a7b2-87b879d4d4be"
+					(reference "R4")
 					(unit 1)
 				)
 			)
